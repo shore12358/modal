@@ -1,0 +1,40 @@
+body{
+    margin:0;
+}
+p{
+    font-size:14px;
+}
+h1,h2,h3,h4,p{
+    margin:0;
+}
+.aw-mask{
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.aw-modal{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width: 400px;
+    min-height: 140px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    margin-top: -70px;
+    margin-left: -200px;
+}
+.aw-modal>div{
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+.aw-modal>div:last-child{
+    border-bottom: none;
+}
+.aw-modal .close-btn{
+    float: right;
+    color:#4d4d4d;
+    cursor: pointer;
+}

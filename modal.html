@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="modal.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <button onclick="aModal.show()">show!</button>
+        </div>
+        <script type="text/javascript" src="modal.js"></script>
+        <script type="text/javascript">
+            function sayHi(_name) {
+                alert(`Hi! ${_name}!`);
+            }
+            let aModal = new Modal({
+                title: 'Attention',
+                text: 'attention here, a modal is ready now! :)',
+                btn: [{
+                    name: 'confirm',
+                    callback: sayHi.bind(null, ['you'])
+                }]
+            });
+            aModal.show();
+        </script>
+    </body>
+</html>
